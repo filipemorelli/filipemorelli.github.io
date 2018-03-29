@@ -9,7 +9,7 @@ var changed = require('gulp-changed');
 var imagemin = require('gulp-imagemin');
 
 gulp.task('css', function () {
-    return gulp.src('./assets/css/*.css')
+    return gulp.src(['./assets/css/*.css', '!./assets/css/main.min.css'])
         .pipe(purify(['./assets/**/*.js', './**/*.html']))
         .pipe(gulp.dest('./dist/css'));
 });
@@ -19,12 +19,12 @@ gulp.task('fonts', function () {
         .pipe(gulp.dest('public/fonts'));
 });
 
-gulp.task('styles', ['fonts', 'css'], function () {
+gulp.task('styles', ['css'], function () {
     return gulp.src('dist/css/*.css')
-        .pipe(concat('site.css'))
+        .pipe(concat('main.min.css'))
         .pipe(minifyCSS())
         .pipe(autoprefixer('last 2 versions'))
-        .pipe(gulp.dest('public/css'));
+        .pipe(gulp.dest('assets/css'));
 });
 
 gulp.task('jquery', function () {
