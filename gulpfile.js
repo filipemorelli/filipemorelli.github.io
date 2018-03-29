@@ -27,13 +27,22 @@ gulp.task('styles', ['fonts', 'css'], function () {
         .pipe(gulp.dest('public/css'));
 });
 
-gulp.task('js', function () {
-    return gulp.src('./app/assets/js/*.js')
+gulp.task('jquery', function () {
+    return gulp.src('./app/assets/js/jquery.js')
+        .pipe(gulp.dest('public/js'));
+})
+
+gulp.task('js-minify', function () {
+    return gulp.src(['./app/assets/js/*.js', '!./app/assets/js/jquery.js'])
         .pipe(concat('scripts.js'))
         .pipe(gulp.dest('dist/js'))
         .pipe(rename('scripts.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('public/js'));
+});
+
+gulp.task('js', ['jquery', 'js-minify'], function () {
+
 });
 
 gulp.task('img', function () {
