@@ -134,22 +134,26 @@
 						minlength: 2
 					},
 					email: {
-						required: true
+                        required: true,
+                        email: true
 					},
 					message: {
-						required: true
+                        required: true,
+                        minlength: 10
 					}
 				},
 				messages: {
 					name: {
-						required: "Please Input Your Name",
-						minlength: "your name must consist of at least 2 characters"
+						required: "Por favor insira o seu nome.",
+						minlength: "Seu nome deve consistir de pelo menos 2 caracteres."
 					},
 					email: {
-						required: "Please Input Your Email"
+                        required: "Por favor insira o seu e-mail.",
+                        email: "Por favor insira um endereço de e-mail válido."
 					},
 					message: {
-						required: "Your Message Required"
+                        required: "Por favor insira o sua mensagem.",
+                        minlength: "Sua mensagem deve consistir de pelo menos 10 caracteres."
 					}
 				},
 				submitHandler: function (form) {
