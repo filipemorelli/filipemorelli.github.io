@@ -60,3 +60,4 @@ typings/
 
 /dist
 /public
+package-lock.json
