@@ -9,13 +9,13 @@ var changed = require('gulp-changed');
 var imagemin = require('gulp-imagemin');
 
 gulp.task('css', function () {
-    return gulp.src('./app/assets/css/*.css')
-        .pipe(purify(['./app/assets/**/*.js', './app/**/*.html']))
+    return gulp.src('./assets/css/*.css')
+        .pipe(purify(['./assets/**/*.js', './**/*.html']))
         .pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('fonts', function () {
-    return gulp.src('./app/assets/fonts/*')
+    return gulp.src('./assets/fonts/*')
         .pipe(gulp.dest('public/fonts'));
 });
 
@@ -28,12 +28,12 @@ gulp.task('styles', ['fonts', 'css'], function () {
 });
 
 gulp.task('jquery', function () {
-    return gulp.src('./app/assets/js/jquery.js')
+    return gulp.src('./assets/js/jquery.js')
         .pipe(gulp.dest('public/js'));
 })
 
 gulp.task('js-minify', function () {
-    return gulp.src(['./app/assets/js/*.js', '!./app/assets/js/jquery.js'])
+    return gulp.src(['./assets/js/*.js', '!./assets/js/jquery.js'])
         .pipe(concat('scripts.js'))
         .pipe(gulp.dest('dist/js'))
         .pipe(rename('scripts.min.js'))
@@ -46,7 +46,7 @@ gulp.task('js', ['jquery', 'js-minify'], function () {
 });
 
 gulp.task('img', function () {
-    gulp.src('./app/assets/img/**/*.+(png|jpg|gif)')
+    gulp.src('./assets/img/**/*.+(png|jpg|gif)')
         .pipe(changed('public/assets/img'))
         .pipe(imagemin())
         .pipe(gulp.dest('public/assets/img'));
