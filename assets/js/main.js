@@ -11,7 +11,6 @@
   01. NAVIGATION
   02. MOBILE NAVIGATION
   03. PARALLAX BACKGROUND EFFECT
-  04. TEXT ROTATE
   05. HOME ARROW DOWN
   06. SMOTH SCROLL
   07. PORTFOLIO FILTER IMAGE
@@ -72,17 +71,6 @@
         $(function() {
             parallax();
         });
-
-
-        /* 04. TEXT ROTATE
-        ==================================================*/
-        $(document).on('ready', function() {
-            $('#text-rotator').rotatetext({
-                fadeSpeed: 500,
-                pauseSpeed: 2000
-            });
-        });
-
 
         /* 05. HOME ARROW DOWN
         ==================================================*/
