@@ -1,19 +1,31 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Filipe Morelli - Portfolio</title>
-    <link rel="icon" href="public/assets/img/favicon.ico" type="image/x-icon">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Filipe Morelli - Portfolio</title>
+	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 
-    <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Hind:600|Lato:300,400" rel="stylesheet">
+	<!-- CSS PLUGIN -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="assets/css/flexslider.css">
+	<link rel="stylesheet" href="assets/css/aos.css">
 
-    <link rel="stylesheet" href="public/css/site.css">
+	<!-- MAIN STYLE -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- RESPONSIVES STYLE -->
+	<link rel="stylesheet" href="assets/css/style-responsives.css">
 
-    <!--[if lt IE 9]>
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Hind:600|Lato:300,400" rel="stylesheet">
+
+	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -22,490 +34,506 @@
 
 <body>
 
-    <!-- PRELOADER-->
-    <div id="preloader">
-        <div id="status">
-            <div class="loader-revolve center">
-                <span></span>
-            </div>
-        </div>
-    </div>
-    <!-- END PRELOADER -->
+	<!-- PRELOADER-->
+	<div id="preloader">
+		<div id="status">
+			<div class="loader-revolve center">
+				<span></span>
+			</div>
+		</div>
+	</div>
+	<!-- END PRELOADER -->
 
-    <!-- NAVIGATION -->
-    <div id="navigation">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="logo">
-                        <a href="index.html">Filipe Morelli</a>
-                    </div>
-                </div>
+	<!-- NAVIGATION -->
+	<div id="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="logo">
+						<a href="index.html">Filipe Morelli</a>
+					</div>
+				</div>
 
-                <div class="col-sm-9">
-                    <div class="navigation-menu">
-                        <div class="navbar">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
-                            <div class="navbar-collapse collapse">
-                                <ul class="nav navbar-nav navbar-right">
-                                    <!-- navigation menu items -->
-                                    <li>
-                                        <a class="line active smoth-scroll" href="#home">Home</a>
-                                    </li>
-                                    <li>
-                                        <a class="line smoth-scroll" href="#about">Sobre</a>
-                                    </li>
-                                    <li>
-                                        <a class="line smoth-scroll" href="#services">Serviços</a>
-                                    </li>
-                                    <li>
-                                        <a class="line smoth-scroll" href="#testimonial">Testemunhos</a>
-                                    </li>
-                                    <li>
-                                        <a class="line smoth-scroll" href="#contact">Contato</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END NAVIGATION -->
+				<div class="col-sm-9">
+					<div class="navigation-menu">
+						<div class="navbar">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="navbar-collapse collapse">
+								<ul class="nav navbar-nav navbar-right">
+									<!-- navigation menu items -->
+									<li>
+										<a class="line active smoth-scroll" href="#home">Home</a>
+									</li>
+									<li>
+										<a class="line smoth-scroll" href="#about">Sobre</a>
+									</li>
+									<li>
+										<a class="line smoth-scroll" href="#services">Serviços</a>
+									</li>
+									<li>
+										<a class="line smoth-scroll" href="#testimonial">Testemunhos</a>
+									</li>
+									<li>
+										<a class="line smoth-scroll" href="#contact">Contato</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END NAVIGATION -->
 
-    <!-- HOME -->
-    <div id="home" class="home-bg box-intro" data-stellar-background-ratio="0.6">
-        <div class="overlay">
-            <a class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=T2Y0LDASIyo', showControls:false, autoPlay:true, zoom:0, loop:true, mute:false, startAt:0, opacity:1, quality:'default'}"></a>
-            <div class="display-table">
-                <div class="display-table-cell">
-                    <div class="container">
-                        <div class="row">
-                            <div class="home-text">
-                                <!-- profile picture -->
-                                <div class="profile-pic" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
-                                    <img src="public/assets/img/me.jpg" height="500" class="img-responsive" alt="">
-                                </div>
+	<!-- HOME -->
+	<div id="home" class="home-bg box-intro" data-stellar-background-ratio="0.6">
+		<div class="overlay">
+			<a class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=T2Y0LDASIyo', showControls:false, autoPlay:true, zoom:0, loop:true, mute:false, startAt:0, opacity:1, quality:'default'}"></a>
+			<div class="display-table">
+				<div class="display-table-cell">
+					<div class="container">
+						<div class="row">
+							<div class="home-text">
+								<!-- profile picture -->
+								<div class="profile-pic" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+									<img src="assets/img/me.jpg" height="500" class="img-responsive" alt="">
+								</div>
 
-                                <!-- home title -->
-                                <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
-                                    <h1>Olá, Eu sou Filipe Morelli</h1>
-                                    <h3 id="text-rotator">
-                                        <div>Analista de Sistemas de Informação e Desenvolvedor FullStack</div>
-                                    </h3>
-                                </div>
-                            </div>
+								<!-- home title -->
+								<div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+									<h1>Olá, Eu sou Filipe Morelli</h1>
+									<h3 id="text-rotator">
+										<div>Analista de Sistemas de Informação e Desenvolvedor FullStack</div>
+									</h3>
+								</div>
+							</div>
 
-                            <!-- arrow button -->
-                            <a class="smoth-scroll" href="#about">
-                                <i class="fa fa-angle-down arrow"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END HOME -->
+							<!-- arrow button -->
+							<a class="smoth-scroll" href="#about">
+								<i class="fa fa-angle-down arrow"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END HOME -->
 
-    <!-- ABOUT -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="description col-md-6 col-sm-4 col-xs-12">
-                    <h2>Olá, Eu sou Filipe</h2>
+	<!-- ABOUT -->
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="description col-md-6 col-sm-4 col-xs-12">
+					<h2>Olá, Eu sou Filipe</h2>
 
-                    <h4>Analista de Sistemas de Informação e Desenvolvedor FullStack</h4>
-                    <p>Sou um Profissional formado em Sistemas de Informação que já atua na área de TI a 7 anos. Especialista
-                        em soluções de Desenvolvimento Web, e plataformas Mobile como: Android, iOS. Segundo lugar na olimpíada
-                        do conhecimento na área de soluções web. Gosto de ajudar as pessoas a resolver seus problemas.
-                    </p>
+					<h4>Analista de Sistemas de Informação e Desenvolvedor FullStack</h4>
+					<p>Sou um Profissional formado em Sistemas de Informação que já atua na área de TI a 7 anos. Especialista em soluções de
+						Desenvolvimento Web, e plataformas Mobile como: Android, iOS. Segundo lugar na olimpíada do conhecimento na área de
+						soluções web. Gosto de ajudar as pessoas a resolver seus problemas.
+					</p>
 
-                    <!-- social media items -->
-                    <ul class="social-icons">
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-google-plus"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-skype"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+					<!-- social media items -->
+					<ul class="social-icons">
+						<li>
+							<a href="#">
+								<i class="fa fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-google-plus"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-skype"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
 
-                <!-- facts counting -->
-                <div class=" facts col-md-6 col-sm-5 col-xs-12">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6 col-xs-6">
-                            <div class="count-item">
-                                <div class="numscroller" data-slno='1' data-min='0' data-max='103' data-delay='10' data-increment="5">103</div>
-                                <div class="count-name-intro">Projetos Feitos</div>
-                            </div>
-                        </div>
+				<!-- facts counting -->
+				<div class=" facts col-md-6 col-sm-5 col-xs-12">
+					<div class="row">
+						<div class="col-md-4 col-sm-6 col-xs-6">
+							<div class="count-item">
+								<div class="numscroller" data-slno='1' data-min='0' data-max='103' data-delay='10' data-increment="5">103</div>
+								<div class="count-name-intro">Projetos Feitos</div>
+							</div>
+						</div>
 
-                        <div class="col-md-4 col-sm-6 col-xs-6">
-                            <div class="count-item">
-                                <div class="numscroller" data-slno='1' data-min='0' data-max='500' data-delay='10' data-increment="5">500</div>
-                                <div class="count-name-intro">Copos de café</div>
-                            </div>
-                        </div>
+						<div class="col-md-4 col-sm-6 col-xs-6">
+							<div class="count-item">
+								<div class="numscroller" data-slno='1' data-min='0' data-max='500' data-delay='10' data-increment="5">500</div>
+								<div class="count-name-intro">Copos de café</div>
+							</div>
+						</div>
 
-                        <div class="col-md-4 col-sm-6 col-xs-6">
-                            <div class="count-item">
-                                <div class="numscroller" data-slno='1' data-min='0' data-max='86' data-delay='10' data-increment="5">86</div>
-                                <div class="count-name-intro">Clientes Atendidos</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END ABOUT -->
+						<div class="col-md-4 col-sm-6 col-xs-6">
+							<div class="count-item">
+								<div class="numscroller" data-slno='1' data-min='0' data-max='86' data-delay='10' data-increment="5">86</div>
+								<div class="count-name-intro">Clientes Atendidos</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END ABOUT -->
 
-    <!-- SKILLS -->
-    <section id="skills">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2>Minhas Competências</h2>
-                </div>
+	<!-- SKILLS -->
+	<section id="skills">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2>Minhas Competências</h2>
+				</div>
 
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="progress-box">
-                        <p>HTML5, CSS3, JavaScript, jQuery
-                            <span class="color-heading pull-right">99%</span>
-                        </p>
-                        <div class="progress">
-                            <div class="progress-bar bg-color-base" role="progressbar" data-width="99"></div>
-                        </div>
-                    </div>
-                </div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="progress-box">
+						<p>HTML5, CSS3, JavaScript, jQuery
+							<span class="color-heading pull-right">99%</span>
+						</p>
+						<div class="progress">
+							<div class="progress-bar bg-color-base" role="progressbar" data-width="99"></div>
+						</div>
+					</div>
+				</div>
 
-                <!-- skills items -->
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="progress-box">
-                        <p>PHP, NodeJS e Mysql
-                            <span class="color-heading pull-right">93%</span>
-                        </p>
-                        <div class="progress">
-                            <div class="progress-bar bg-color-base" role="progressbar" data-width="93"></div>
-                        </div>
-                    </div>
-                </div>
+				<!-- skills items -->
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="progress-box">
+						<p>PHP, NodeJS e Mysql
+							<span class="color-heading pull-right">93%</span>
+						</p>
+						<div class="progress">
+							<div class="progress-bar bg-color-base" role="progressbar" data-width="93"></div>
+						</div>
+					</div>
+				</div>
 
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="progress-box">
-                        <p>Wordpress, Joomla, Drupal
-                            <span class="color-heading pull-right">99%</span>
-                        </p>
-                        <div class="progress">
-                            <div class="progress-bar bg-color-base" role="progressbar" data-width="99"></div>
-                        </div>
-                    </div>
-                </div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="progress-box">
+						<p>Wordpress, Joomla, Drupal
+							<span class="color-heading pull-right">99%</span>
+						</p>
+						<div class="progress">
+							<div class="progress-bar bg-color-base" role="progressbar" data-width="99"></div>
+						</div>
+					</div>
+				</div>
 
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="progress-box">
-                        <p>E-commerce e CMS
-                            <span class="color-heading pull-right">77%</span>
-                        </p>
-                        <div class="progress">
-                            <div class="progress-bar bg-color-base" role="progressbar" data-width="77"></div>
-                        </div>
-                    </div>
-                </div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="progress-box">
+						<p>E-commerce e CMS
+							<span class="color-heading pull-right">77%</span>
+						</p>
+						<div class="progress">
+							<div class="progress-bar bg-color-base" role="progressbar" data-width="77"></div>
+						</div>
+					</div>
+				</div>
 
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="progress-box">
-                        <p>Marketing Digital (SEO, E-mail, Afiliações)
-                            <span class="color-heading pull-right">85%</span>
-                        </p>
-                        <div class="progress">
-                            <div class="progress-bar bg-color-base" role="progressbar" data-width="85"></div>
-                        </div>
-                    </div>
-                </div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="progress-box">
+						<p>Marketing Digital (SEO, E-mail, Afiliações)
+							<span class="color-heading pull-right">85%</span>
+						</p>
+						<div class="progress">
+							<div class="progress-bar bg-color-base" role="progressbar" data-width="85"></div>
+						</div>
+					</div>
+				</div>
 
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="progress-box">
-                        <p> Servidores (DNS, E-mail, FTP, SSH, etc.)
-                            <span class="color-heading pull-right">90%</span>
-                        </p>
-                        <div class="progress">
-                            <div class="progress-bar bg-color-base" role="progressbar" data-width="90"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END SKILLS -->
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="progress-box">
+						<p> Servidores (DNS, E-mail, FTP, SSH, etc.)
+							<span class="color-heading pull-right">90%</span>
+						</p>
+						<div class="progress">
+							<div class="progress-bar bg-color-base" role="progressbar" data-width="90"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END SKILLS -->
 
-    <!-- SERVICES -->
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Services</h2>
-                </div>
+	<!-- SERVICES -->
+	<section id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Services</h2>
+				</div>
 
-                <div class="col-md-12">
-                    <div class="row">
-                        <!-- services items -->
-                        <div class="col-md-3 col-sm-6">
-                            <div class="services-item">
-                                <i class="fa fa-cubes fa-2x"></i>
-                                <h4>Web Design</h4>
-                            </div>
-                        </div>
+				<div class="col-md-12">
+					<div class="row">
+						<!-- services items -->
+						<div class="col-md-3 col-sm-6">
+							<div class="services-item">
+								<i class="fa fa-cubes fa-2x"></i>
+								<h4>Web Design</h4>
+							</div>
+						</div>
 
-                        <div class="col-md-3 col-sm-6">
-                            <div class="services-item">
-                                <i class="fa fa-shopping-cart fa-2x"></i>
-                                <h4>E-commerce</h4>
-                            </div>
-                        </div>
+						<div class="col-md-3 col-sm-6">
+							<div class="services-item">
+								<i class="fa fa-shopping-cart fa-2x"></i>
+								<h4>E-commerce</h4>
+							</div>
+						</div>
 
-                        <div class="col-md-3 col-sm-6">
-                            <div class="services-item">
-                                <i class="fa fa-heart fa-2x"></i>
-                                <h4>HTML, CSS, JS</h4>
-                            </div>
-                        </div>
+						<div class="col-md-3 col-sm-6">
+							<div class="services-item">
+								<i class="fa fa-heart fa-2x"></i>
+								<h4>HTML, CSS, JS</h4>
+							</div>
+						</div>
 
-                        <div class="col-md-3 col-sm-6">
-                            <div class="services-item">
-                                <i class="fa fa-code fa-2x"></i>
-                                <h4>Back End (PHP e Node.js)</h4>
-                            </div>
-                        </div>
+						<div class="col-md-3 col-sm-6">
+							<div class="services-item">
+								<i class="fa fa-code fa-2x"></i>
+								<h4>Back End (PHP e Node.js)</h4>
+							</div>
+						</div>
 
-                        <div class="col-md-3 col-sm-6">
-                            <div class="services-item">
-                                <i class="fa fa-diamond fa-2x"></i>
-                                <h4>UX Design (Ajustes e melhorias)</h4>
-                            </div>
-                        </div>
+						<div class="col-md-3 col-sm-6">
+							<div class="services-item">
+								<i class="fa fa-diamond fa-2x"></i>
+								<h4>UX Design (Ajustes e melhorias)</h4>
+							</div>
+						</div>
 
-                        <div class="col-md-3 col-sm-6">
-                            <div class="services-item">
-                                <i class="fa fa-wordpress fa-2x"></i>
-                                <h4>Wordpress</h4>
-                            </div>
-                        </div>
+						<div class="col-md-3 col-sm-6">
+							<div class="services-item">
+								<i class="fa fa-wordpress fa-2x"></i>
+								<h4>Wordpress</h4>
+							</div>
+						</div>
 
-                        <div class="col-md-3 col-sm-6">
-                            <div class="services-item">
-                                <i class="fa fa-bolt fa-2x"></i>
-                                <h4>SEO e Marketing</h4>
-                            </div>
-                        </div>
+						<div class="col-md-3 col-sm-6">
+							<div class="services-item">
+								<i class="fa fa-bolt fa-2x"></i>
+								<h4>SEO e Marketing</h4>
+							</div>
+						</div>
 
-                        <div class="col-md-3 col-sm-6">
-                            <div class="services-item">
-                                <i class="fa fa-connectdevelop fa-2x"></i>
-                                <h4>Servidores (DNS, E-mail, etc.)</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END SERVICES -->
+						<div class="col-md-3 col-sm-6">
+							<div class="services-item">
+								<i class="fa fa-connectdevelop fa-2x"></i>
+								<h4>Servidores (DNS, E-mail, etc.)</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END SERVICES -->
 
-    <!-- HIRE -->
-    <section id="hire">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9 col-sm-6 col-xs-12">
-                    <h2>Contrate-me</h2>
+	<!-- HIRE -->
+	<section id="hire">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9 col-sm-6 col-xs-12">
+					<h2>Contrate-me</h2>
 
-                    <p>
-                        Conversamos, fazemos um orçamento e
-                        <b>pagamento somente quando estiver pronto</b>.
-                    </p>
-                </div>
+					<p>
+						Conversamos, fazemos um orçamento e
+						<b>pagamento somente quando estiver pronto</b>.
+					</p>
+				</div>
 
-                <!-- button -->
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <p>
-                        <a href="#contact" class="btn btn-dark btn-lg smoth-scroll">CONTRATE-ME AGORA</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END HIRE-->
+				<!-- button -->
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<p>
+						<a href="#contact" class="btn btn-dark btn-lg smoth-scroll">CONTRATE-ME AGORA</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END HIRE-->
 
-    <!-- TESTIMONIAL -->
-    <section id="testimonial" class="testimonial-slider text-center" style="background-image: url('public/assets/img/bg.jpg');">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="flexslider">
-                        <ul class="slides">
-                            <!-- testimoni items -->
-                            <li>
-                                <p class="author">Gisele Ferreira</p>
-                                <h2>"O Filipe demonstrou competência no atendimento, amplos conhecimentos técnicos, organização
-                                    e qualidade em relação aos serviços prestados."
-                                </h2>
-                            </li>
+	<!-- TESTIMONIAL -->
+	<section id="testimonial" class="testimonial-slider text-center" style="background-image: url('assets/img/bg.jpg');">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="flexslider">
+						<ul class="slides">
+							<!-- testimoni items -->
+							<li>
+								<p class="author">Gisele Ferreira</p>
+								<h2>"O Filipe demonstrou competência no atendimento, amplos conhecimentos técnicos, organização e qualidade em relação
+									aos serviços prestados."
+								</h2>
+							</li>
 
-                            <li>
-                                <p class="author">Cinara Macedo</p>
-                                <h2>"Todo e qualquer problema ele apresentou uma solução de imediato. Isto me deu uma segurança
-                                    muito grande e a certeza de contar com um excelente profissional."
-                                </h2>
+							<li>
+								<p class="author">Cinara Macedo</p>
+								<h2>"Todo e qualquer problema ele apresentou uma solução de imediato. Isto me deu uma segurança muito grande e a certeza
+									de contar com um excelente profissional."
+								</h2>
 
-                            </li>
+							</li>
 
-                            <li>
-                                <p class="author">Vitor Monteiro</p>
-                                <h2>"O atendimento e disponibilidade foi fundamental para a entrega do trabalho para meu cliente."
-                                </h2>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END TESTIMONIAL -->
+							<li>
+								<p class="author">Vitor Monteiro</p>
+								<h2>"O atendimento e disponibilidade foi fundamental para a entrega do trabalho para meu cliente."
+								</h2>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END TESTIMONIAL -->
 
-    <!-- CONTACT -->
-    <section id="contact">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2>Meus contatos</h2>
-                </div>
+	<!-- CONTACT -->
+	<section id="contact">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2>Meus contatos</h2>
+				</div>
 
-                <div class="address-icons col-md-8 col-md-offset-2">
-                    <div class="col-md-4 col-sm-4">
-                        <i class="fa fa-envelope-o fa-2x"></i>
-                        <p>morellitecinfo@gmail.com</p>
-                    </div>
+				<div class="address-icons col-md-8 col-md-offset-2">
+					<div class="col-md-4 col-sm-4">
+						<i class="fa fa-envelope-o fa-2x"></i>
+						<p>morellitecinfo@gmail.com</p>
+					</div>
 
-                    <div class="col-md-4 col-sm-4">
-                        <i class="fa fa-skype fa-2x"></i>
-                        <p>morellinrt@outlook.com</p>
-                    </div>
+					<div class="col-md-4 col-sm-4">
+						<i class="fa fa-skype fa-2x"></i>
+						<p>morellinrt@outlook.com</p>
+					</div>
 
-                    <div class="col-md-4 col-sm-4">
-                        <i class="fa fa-whatsapp fa-2x"></i>
-                        <p>+55 (31) 98652-8270</p>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
+					<div class="col-md-4 col-sm-4">
+						<i class="fa fa-whatsapp fa-2x"></i>
+						<p>+55 (31) 98652-8270</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
 
-                <div class="col-md-8 col-md-offset-2">
-                    <!--changes contact email in file mailer.php -->
-                    <form id='contact-form' name='contact' method='post'>
-                        <input type='hidden' name='form-name' value='contact'>
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="form-group">
-                                    <input type="text" name="name" id="name" class="form-control" placeholder="Nome" required>
-                                    <p class="help-block text-danger">
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="form-group">
-                                    <input type="email" name="email" id="email" class="form-control" placeholder="E-mail" required>
-                                    <p class="help-block text-danger">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Mensagem..." minlength="10" required></textarea>
-                            <p class="help-block text-danger">
-                        </div>
+				<div class="col-md-8 col-md-offset-2">
+					<!--changes contact email in file mailer.php -->
+					<form id='contact-form' name='contact' method='post'>
+						<input type='hidden' name='form-name' value='contact'>
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="form-group">
+									<input type="text" name="name" id="name" class="form-control" placeholder="Nome" required>
+									<p class="help-block text-danger">
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="form-group">
+									<input type="email" name="email" id="email" class="form-control" placeholder="E-mail" required>
+									<p class="help-block text-danger">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<textarea name="message" id="message" class="form-control" rows="4" placeholder="Mensagem..." minlength="10" required></textarea>
+							<p class="help-block text-danger">
+						</div>
 
-                        <div class="col-md-12 col-xs-12">
-                            <button id="submit" type="submit" name="submit" class="btn btn-dark">Enviar Mensagem</button>
-                        </div>
+						<div class="col-md-12 col-xs-12">
+							<button id="submit" type="submit" name="submit" class="btn btn-dark">Enviar Mensagem</button>
+						</div>
 
-                        <div id="success" class="col-md-12 col-xs-12">
-                            <p class="green textcenter">Sua mensagem foi enviada, Obrigado entrarei em contato em breve!</p>
-                        </div>
+						<div id="success" class="col-md-12 col-xs-12">
+							<p class="green textcenter">Sua mensagem foi enviada, Obrigado entrarei em contato em breve!</p>
+						</div>
 
-                        <div id="error" class="col-md-12 col-xs-12">
-                            <p>Algo talvez errado, por favor tente novamente.</p>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END CONTACT -->
+						<div id="error" class="col-md-12 col-xs-12">
+							<p>Algo talvez errado, por favor tente novamente.</p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END CONTACT -->
 
-    <!-- FOOTER -->
-    <footer id="footer">
-        <div class="container">
-            <div class="col-md-12 text-center">
-                <ul class="social-icons-footer">
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-behance"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-dribbble"></i>
-                        </a>
-                    </li>
-                </ul>
+	<!-- FOOTER -->
+	<footer id="footer">
+		<div class="container">
+			<div class="col-md-12 text-center">
+				<ul class="social-icons-footer">
+					<li>
+						<a href="#">
+							<i class="fa fa-facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-instagram"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-behance"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-dribbble"></i>
+						</a>
+					</li>
+				</ul>
 
-                <p>© 2018 Filipe Morelli</p>
-            </div>
-        </div>
-    </footer>
-    <!-- END FOOTER -->
-
-
+				<p>© 2018 Filipe Morelli</p>
+			</div>
+		</div>
+	</footer>
+	<!-- END FOOTER -->
 
 
-    <!-- JS PLUGIN -->
-    <script src="public/js/jquery.js"></script>
-    <script src="public/js/scripts.min.js"></script>
-    <script type="text/javascript">
-        $('.player').mb_YTPlayer();
-    </script>
+
+
+	<!-- JS PLUGIN -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.stellar.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/jquery.appear.js"></script>
+	<script src="assets/js/progress-bar.min.js"></script>
+	<script src="assets/js/jquery.mixitup.js"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/magnific-popup-options.js"></script>
+	<script src="assets/js/jquery.flexslider-min.js"></script>
+	<script src="assets/js/aos.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/jquery.form.js"></script>
+	<script src="assets/js/jquery.validate.min.js"></script>
+	<script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
+	<script type="text/javascript">
+		$('.player').mb_YTPlayer();
+	</script>
+
+	<!-- MAIN JS -->
+	<script src="assets/js/main.js"></script>
 </body>
 
 </html>
